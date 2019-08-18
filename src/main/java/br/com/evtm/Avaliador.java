@@ -14,7 +14,7 @@ public class Avaliador {
 		
 		RandomUtils.useTestSeed();
 		
-		DataModel produtos = new Recomendador().getModeloDeProdutos();
+		DataModel produtos = new Recomendador().getModeloDeEventos();
 		
 		RecommenderEvaluator evaluator = new AverageAbsoluteDifferenceRecommenderEvaluator();
 		RecommenderBuilder builer = new RecomendadorBuilder();

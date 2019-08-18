@@ -10,7 +10,7 @@ import org.apache.mahout.cf.taste.recommender.Recommender;
 
 public class RecomendaEventos {
 	public static void main(String[] args) throws IOException, TasteException {
-		DataModel eventos = new Recomendador().getModeloDeCursos();
+		DataModel eventos = new Recomendador().getModeloDeEventos();
 		Recommender recommender = new RecomendadorBuilder().buildRecommender(eventos);
 		
 		List<RecommendedItem> recommendations = recommender.recommend(5, 3);
